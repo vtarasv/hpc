@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#SBATCH --ntasks=4
+#SBATCH --output=out
+
+module load openmpi/4.1.1
+
+mpirun python run.py
