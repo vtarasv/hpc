@@ -1,5 +1,8 @@
-NODELIST=romeo[1-2,9]
-MASTER_ADDR=romeo1
+NODELIST=gpu-dy-g4dnxlarge-[1-3]
+MASTER_ADDR=gpu-dy-g4dnxlarge-1
 Setting model on gpu 0 of proc 0
+Setup succefull on gpu 0 of proc 0
 Setting model on gpu 0 of proc 1
+Setup succefull on gpu 0 of proc 1
 Setting model on gpu 0 of proc 2
+Setup succefull on gpu 0 of proc 2

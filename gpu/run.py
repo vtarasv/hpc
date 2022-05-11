@@ -48,9 +48,10 @@ def main(args):
         raise NotImplementedError("Only DistributedDataParallel is supported.")
         
     ### optimizer ###
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=1e-5)
-    with open(f"node-{args.rank}.log", "a+") as f:
-        f.write(f"Setup succefull on gpu {args.gpu} of proc {args.rank}\n")
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
+    #with open(f"node-{args.rank}.log", "a+") as f:
+    #   f.write(f"Setup succefull on gpu {args.gpu} of proc {args.rank}\n")
+    print(f"Setup succefull on gpu {args.gpu} of proc {args.rank}")
 
 if __name__ == '__main__':
     args = parse_args()

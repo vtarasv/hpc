@@ -2,8 +2,11 @@
 #SBATCH --nodes=3
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
+#SBATCH --output=out
 
-export MASTER_PORT=12340
+cd $SLURM_SUBMIT_DIR
+
+export MASTER_PORT=27184
 export WORLD_SIZE=3
 echo "NODELIST="${SLURM_NODELIST}
 master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
