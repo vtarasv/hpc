@@ -1,0 +1,5 @@
+NODELIST=romeo[1-2,9]
+MASTER_ADDR=romeo1
+Setting model on gpu 0 of proc 0
+Setting model on gpu 0 of proc 1
+Setting model on gpu 0 of proc 2
